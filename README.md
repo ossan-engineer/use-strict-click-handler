@@ -14,7 +14,7 @@ npm install --save use-strict-click-handler
 
 ```tsx
 import * as React from "react";
-import { handlers } from "use-strict-click-handler";
+import useStrictClickHandler from "use-strict-click-handler";
 
 const Example = () => {
   const { handlers } = useStrictClickHandler(() =>
