@@ -1,7 +1,5 @@
 # use-strict-click-handler
 
->
-
 [![NPM](https://img.shields.io/npm/v/use-strict-click-handler.svg)](https://www.npmjs.com/package/use-strict-click-handler)
 
 ## Install
@@ -13,12 +11,12 @@ npm install --save use-strict-click-handler
 ## Usage
 
 ```tsx
-import * as React from "react";
-import useStrictClickHandler from "use-strict-click-handler";
+import * as React from 'react';
+import useStrictClickHandler from 'use-strict-click-handler';
 
 const Example = () => {
   const { handlers } = useStrictClickHandler(() =>
-    console.log("STRICT CLICKED!")
+    console.log('STRICT CLICKED!')
   );
   return (
     <>
@@ -30,7 +28,7 @@ const Example = () => {
           <li>Drag events are excluded.</li>
         </ol>
       </div>
-      <div className="App" onClick={() => console.log("NORMAL CLICKED!")}>
+      <div className="App" onClick={() => console.log('NORMAL CLICKED!')}>
         <h1>NORMAL CLICK</h1>
         <ol>
           <li>Open console.</li>
@@ -45,7 +43,7 @@ const Example = () => {
 
 ## Demo
 
-http://odd-aunt.surge.sh/
+https://odd-aunt.surge.sh/
 
 ## License
 
