@@ -1,5 +1,4 @@
-// import * as React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, MouseEventHandler, MouseEvent } from "react";
 
 interface MouseDownPosition {
   x?: number;
@@ -17,17 +16,20 @@ const useStrictClickHandler = (callback: () => void) => {
   );
   const [mouseUpPosition, setMouseUpPosition] = useState<MouseUpPosition>({});
 
-  const handlers = {
-    onMouseDown: (e: MouseEvent) =>
+  const handlers: {
+    onMouseDown: MouseEventHandler<HTMLDivElement>;
+    onMouseUp: MouseEventHandler<HTMLDivElement>;
+  } = {
+    onMouseDown: (e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) =>
       setMouseDownPosition({
         x: e.clientX,
-        y: e.clientY
+        y: e.clientY,
       }),
-    onMouseUp: (e: MouseEvent) =>
+    onMouseUp: (e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) =>
       setMouseUpPosition({
         x: e.clientX,
-        y: e.clientY
-      })
+        y: e.clientY,
+      }),
   };
 
   useEffect(() => {
