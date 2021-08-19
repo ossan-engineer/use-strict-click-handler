@@ -8173,7 +8173,7 @@ react-dev-utils@^10.0.0:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@^16.8.6:
+react-dom@16.12.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
   integrity sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
@@ -9792,7 +9792,7 @@ url@^0.11.0:
     querystring "0.2.0"
 
 "use-strict-click-handler@link:..":
-  version "1.0.3"
+  version "1.0.5"
 
 use@^3.1.0:
   version "3.1.1"
