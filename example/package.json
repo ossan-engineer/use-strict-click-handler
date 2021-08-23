@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {
     "react": "link:../node_modules/react",
-    "react-dom": "^16.8.6",
+    "react-dom": "17.0.2",
     "react-scripts": "^3.0.1",
     "use-strict-click-handler": "link:.."
   },
