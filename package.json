@@ -29,7 +29,7 @@
     "@babel/core": "7.21.3",
     "@babel/runtime": "7.21.0",
     "@types/jest": "27.0.1",
-    "@types/react": "18.0.28",
+    "@types/react": "18.3.11",
     "cross-env": "7.0.3",
     "gh-pages": "5.0.0",
     "react": "17.0.2",
